@@ -4,7 +4,7 @@ import textwrap
 def main():
     
     # LLMの準備
-    llm = Llama(model_path="../models/llama-2-7b-chat.Q2_K.gguf")
+    llm = Llama(model_path="../models/SakanaAI-EvoLLM-JP-v1-7B-q2_K.gguf")
 
     while True:
         try:
@@ -20,7 +20,7 @@ def main():
             # 推論の実行
             output = llm(
                 prompt,
-                max_tokens=200,
+                max_tokens=150,
                 temperature=0.1,
                 stop=["prompt:", "AI:", "\n"],
                 echo=False,
