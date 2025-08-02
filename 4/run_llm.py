@@ -4,7 +4,7 @@ import textwrap
 def main():
     
     # LLMの準備
-    llm = Llama(model_path="models/llama-2-7b-chat.Q2_K.gguf")
+    llm = Llama(model_path="..models/llama-2-7b-chat.Q2_K.gguf")
 
     while True:
         try:
